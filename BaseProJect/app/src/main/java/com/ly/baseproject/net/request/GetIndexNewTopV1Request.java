@@ -30,7 +30,7 @@ public class GetIndexNewTopV1Request extends
         try {
             BaseStringRequest request = new BaseStringRequest(Request.Method.GET
                     ,
-                    "http://192.168.0.111:8077"+"/api/v1"+"/Home/GetTopV2", new Response.Listener<String>() {
+                    "url", new Response.Listener<String>() {
 
                 @Override
                 public void onResponse(String response) {
