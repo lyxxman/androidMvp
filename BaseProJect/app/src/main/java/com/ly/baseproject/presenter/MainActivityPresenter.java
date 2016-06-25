@@ -1,5 +1,7 @@
 package com.ly.baseproject.presenter;
 
+import com.ly.baseproject.net.response.IndexNewTopResponse;
+
 /**
  * Created date on 2016/4/19 0019.
  * describe :mainActivity业务接口定义类
@@ -19,5 +21,10 @@ public interface MainActivityPresenter {
     public void onDestroy();
 
     public void getTopData();
-
+    public interface MainActivityLoadListener{
+        public void onLoadTopDataSuccess(IndexNewTopResponse indexNewTopResponse);
+        public void   onLoadTopDataError(String error);
+        public void onLoadMiddleDataSuccess();
+        public void onLoadBottomDataError();
+    }
 }

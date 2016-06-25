@@ -1,7 +1,7 @@
 package com.ly.baseproject.net.response;
 
 
-import com.ly.baseproject.model.item.IndexNewTopV1Data;
+import com.ly.baseproject.entity.item.IndexNewTopV1Data;
 import com.ly.baseproject.net.BaseResponse;
 
 /**
